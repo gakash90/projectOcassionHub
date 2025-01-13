@@ -1,0 +1,62 @@
+# Ignore system files
+.DS_Store           # macOS system files
+Thumbs.db           # Windows system files
+
+# Ignore node_modules folder (for Node.js projects)
+node_modules/
+
+# Ignore environment files (e.g., for Node.js, Python, etc.)
+.env                # Node.js environment variables
+.env.local          # Local environment variables
+.env.*              # Any .env file
+.vscode/            # Visual Studio Code workspace settings
+
+# Ignore IDE/Editor specific files
+.idea/              # JetBrains IDEs (e.g., IntelliJ, WebStorm)
+.vscode/            # Visual Studio Code settings
+*.sublime-project   # Sublime Text project files
+*.sublime-workspace # Sublime Text workspace files
+
+# Ignore log files
+*.log               # Any log file
+*.log.*             # Log files with extensions
+
+# Ignore operating system files
+*.swp               # Swap files (Vim, etc.)
+*.swo               # Swap files
+*.bak               # Backup files
+
+# Ignore compiled code
+*.class             # Java compiled files
+*.o                 # Object files
+*.so                # Shared libraries
+*.dll               # Windows DLL files
+
+# Ignore Python-specific files
+__pycache__/        # Python bytecode files
+*.pyc               # Compiled Python files
+*.pyo               # Optimized Python files
+*.pyd               # Python dynamic module
+
+# Ignore Java-specific files
+*.jar               # Java archives
+*.war               # Web application archives
+*.ear               # Enterprise application archives
+
+# Ignore build output directories
+/dist/              # Build output for front-end projects (e.g., React, Vue)
+build/              # General build output
+out/                # Output directory for many languages (e.g., TypeScript, Go)
+target/             # Java build directory
+
+# Ignore dependency directories for various languages
+vendor/             # Composer dependencies (PHP)
+bower_components/   # Bower dependencies (front-end)
+
+# Ignore test coverage reports
+coverage/           # Test coverage results
+
+# Ignore miscellaneous
+*.bak               # Backup files
+*.tmp               # Temporary files
+*.swp               # Vim swap files
