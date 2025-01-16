@@ -1,4 +1,4 @@
-export const errorResposne = async(error, status, message)=>{
+export const errorResponse = async(error, status, message)=>{
     console.log("")
 
     return {

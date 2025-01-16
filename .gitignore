@@ -21,3 +21,10 @@ node_modules/
 *.bak               # Backup files
 *.tmp               # Temporary files
 *.swp               # Swap files
+
+
+# Ignore log files 
+
+app.log
+exceptions.log
+rejections.log

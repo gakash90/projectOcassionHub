@@ -1,7 +1,7 @@
 import { userService } from "../services/userServices.js";
+import { errorResponse } from "../utils/errorResponse.js";
 import logger from "../utils/logger.js";
 import { successResponse } from "../utils/successResponse.js";
-
 export const userController = async(req, res)=>{
     const {email, username, password} = req.body
     try {
