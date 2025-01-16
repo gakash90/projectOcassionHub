@@ -11,6 +11,13 @@ export const userService = async(userData)=>{
             logger.error(`user already registered ${email}`)
             throw new Error("User already registered")
         }
+
+        const userNameTaken = await User.findOne({username})
+
+        if(userNameTaken){
+            logger.error(`username already taken ${username}` )
+            throw new Error("USername already taken")
+        }
         
         const newUser = User({
             username,
@@ -18,7 +25,7 @@ export const userService = async(userData)=>{
             password
         })
        
-        await newUser.save()
+        // await newUser.save()
 
         logger.info(`User registered Successfully ${email}`)
 
